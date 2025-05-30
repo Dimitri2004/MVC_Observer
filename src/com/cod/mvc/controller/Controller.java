@@ -22,6 +22,10 @@ public class Controller{
         // instanciamos un segundo observador para el limite de velocidad
         ObserverLimite observoLimite = new ObserverLimite(miModel);
         miModel.addObserver(observoLimite);
+
+        ObserverDeposito observerDeposito= new ObserverDeposito(miModel);
+        miModel.addObserver(observerDeposito);
+
     }
 
     /**
@@ -41,6 +45,11 @@ public class Controller{
     public void cambiarVelocidad(String matricula, Integer velocidad){
         miModel.cambiarVelocidad(matricula, velocidad);
     }
+
+    public void cambiarGasolina(String matricula,Integer gasolina){
+        miModel.cambiarGasolina(matricula,gasolina);
+    }
+
 
 
 

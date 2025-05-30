@@ -24,9 +24,11 @@ public class ObserverVelocidad implements Observer {
      */
     @Override
     public void update(Coche arg) {
-        System.out.println("[ObserverVelocidad] Se ha cambiado la velocidad: " + arg.velocidad.toString() + "km/hr");
-        // le comunicamos a la vista que muestre la velocidad
-        View.muestraVelocidad(arg.matricula, arg.velocidad);
+//        System.out.println("[ObserverVelocidad] Se ha cambiado la velocidad: " + arg.velocidad.toString() + "km/hr");
+//        // le comunicamos a la vista que muestre la velocidad
+//        View.muestraVelocidad(arg.matricula, arg.velocidad);
+        System.out.println("[ObserverDeposito] Se ha repostado el deposito: " + arg.gasolina.toString() + " l");
+        View.muestraGasolina(arg.matricula, arg.gasolina);
 
         // tambien tenemos acceso al observable en este método,
         // es decir el com.cod.mvc.model.Model

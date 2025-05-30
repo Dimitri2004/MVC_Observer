@@ -84,6 +84,11 @@ public class Model implements Observable {
         // porque vamos a utilizar el patron observer
         // return getCoche(matricula).velocidad;
     }
+    public void  cambiarGasolina(String matricula,Integer d){
+        getCoche(matricula).gasolina = d;
+
+        notifyObservers(getCoche(matricula));
+    }
 
     /**
      * Devuelve la velocidad según la matrícula
@@ -92,5 +97,8 @@ public class Model implements Observable {
      */
     public Integer getVelocidad(String matricula) {
         return getCoche(matricula).velocidad;
+    }
+    public Integer getGasolina(String matricula){
+        return getCoche(matricula).gasolina;
     }
 }

@@ -21,12 +21,15 @@ public class App {
         miController.crearCoche("Alpine", "HYU 4567");
         miController.crearCoche("Aston Martin", "FGH 3333");
 
-        // Cambiar la velocidad de un coche
-        miController.cambiarVelocidad("SBC 1234", 30);
+//        // Cambiar la velocidad de un coche
+//        miController.cambiarVelocidad("SBC 1234", 30);
+//
+//        // otro cambio de velocidad
+//        // sobrepasando la velocidad máxima
+//        miController.cambiarVelocidad("HYU 4567", 150);
 
-        // otro cambio de velocidad
-        // sobrepasando la velocidad máxima
-        miController.cambiarVelocidad("HYU 4567", 150);
+        //cambio de deposito
+        miController.cambiarGasolina("SBC 1234",150);
 
     }
 }
