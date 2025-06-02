@@ -23,6 +23,9 @@ public class Controller{
         ObserverLimite observoLimite = new ObserverLimite(miModel);
         miModel.addObserver(observoLimite);
 
+        ObserverLitros observerLitros= new ObserverLitros(miModel);
+        miModel.addObserver(observerLitros);
+
         ObserverDeposito observerDeposito= new ObserverDeposito(miModel);
         miModel.addObserver(observerDeposito);
 

@@ -29,7 +29,9 @@ public class App {
 //        miController.cambiarVelocidad("HYU 4567", 150);
 
         //cambio de deposito
-        miController.cambiarGasolina("SBC 1234",150);
+        miController.cambiarGasolina("SBC 1234",100);
+
+        miController.cambiarGasolina("SBC 1234",20);
 
     }
 }

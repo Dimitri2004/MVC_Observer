@@ -6,7 +6,7 @@ public class View {
         return true;
     }
     public static boolean muestraGasolina(String matricula,Integer d){
-        System.out.println("[View]"+matricula+": " +d +" l");
+        System.out.println("[View]"+matricula+": " + d +" l");
         return true;
     }
 }
