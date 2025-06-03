@@ -105,6 +105,12 @@ public class Model implements Observable {
     public Integer getVelocidad(String matricula) {
         return getCoche(matricula).velocidad;
     }
+
+    /**
+     * Devuelve la gasolina según la matrícula
+     * @param matricula identificador del coche
+     * @return cantidad de gasolina del coche actual
+     */
     public Integer getGasolina(String matricula){
         return getCoche(matricula).gasolina;
     }
