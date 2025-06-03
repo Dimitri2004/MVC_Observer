@@ -84,6 +84,13 @@ public class Model implements Observable {
         // porque vamos a utilizar el patron observer
         // return getCoche(matricula).velocidad;
     }
+    /*
+        * Método que cambia la gasolina, por lo tanto
+        *    tendrá que avisar al controlador que ha cambiado
+        * @param matricula identificador del coche
+        * @param d nueva cantidad de gasolina
+        *
+     */
     public void  cambiarGasolina(String matricula,Integer d){
         getCoche(matricula).gasolina = d;
 
