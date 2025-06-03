@@ -5,6 +5,7 @@ public class View {
         System.out.println("[View] " + matricula + ": " + v + "km/hr");
         return true;
     }
+    // Este método muestra la gsolina actual del coche
     public static boolean muestraGasolina(String matricula,Integer d){
         System.out.println("[View]"+matricula+": " + d +" l");
         return true;
