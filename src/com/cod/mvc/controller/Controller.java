@@ -23,9 +23,13 @@ public class Controller{
         ObserverLimite observoLimite = new ObserverLimite(miModel);
         miModel.addObserver(observoLimite);
 
+        // instanciamos los observadores que queremos
+        // Este observador se encargará de avisar cuando se cambie la gasolina del coche
         ObserverLitros observerLitros= new ObserverLitros(miModel);
         miModel.addObserver(observerLitros);
 
+        // instanciamos el observador de deposito
+        // Este observador se encargará de avisar cuando el depósito de gasolina esté bajo
         ObserverDeposito observerDeposito= new ObserverDeposito(miModel);
         miModel.addObserver(observerDeposito);
 
@@ -49,6 +53,11 @@ public class Controller{
         miModel.cambiarVelocidad(matricula, velocidad);
     }
 
+    /**
+     * Cambia el limite de gasolina de un coche
+     * @param matricula del coche
+     * @param gasolina nuevo
+     */
     public void cambiarGasolina(String matricula,Integer gasolina){
         miModel.cambiarGasolina(matricula,gasolina);
     }
