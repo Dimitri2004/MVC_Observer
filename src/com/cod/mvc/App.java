@@ -19,5 +19,8 @@ public class App {
         // sobrepasando la velocidad máxima
         Controller.cambiarVelocidad("HYU 4567", 150);
 
+        Controller.cambiarDeposito("SBC 1234",9);
+
+        Controller.cambiarDeposito("SBC 1234",25);
     }
 }

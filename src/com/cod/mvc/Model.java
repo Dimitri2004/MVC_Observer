@@ -18,6 +18,9 @@ public class Model {
     public static void notifyObservers(Coche coche) {
             ObserverLimite.update(coche);
     }
+    public static void notifyObserversG(Coche coche) {
+        ObserverDeposito.update(coche);
+    }
 
 
     /**
@@ -65,6 +68,13 @@ public class Model {
 
         return getCoche(matricula).velocidad;
     }
+    public static Integer cambiarDeposito(String matricula,Integer g){
+        getCoche(matricula).deposito= g;
+
+        notifyObserversG(getCoche(matricula));
+
+        return getCoche(matricula).deposito;
+    }
 
     /**
      * Devuelve la velocidad según la matrícula
@@ -74,4 +84,5 @@ public class Model {
     public Integer getVelocidad(String matricula) {
         return getCoche(matricula).velocidad;
     }
+
 }

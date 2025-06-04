@@ -21,6 +21,10 @@ public class Controller{
         Integer nuevaVelocidad = Model.cambiarVelocidad(matricula, velocidad);
         View.muestraVelocidad(matricula, nuevaVelocidad);
     }
+    public static void cambiarDeposito(String matricula,Integer litros){
+        Integer nuevoDeposito = Model.cambiarDeposito(matricula, litros);
+        View.muestraDeposito(matricula, nuevoDeposito);
+    }
 
 
 
