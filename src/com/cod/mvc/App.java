@@ -21,6 +21,6 @@ public class App {
 
         Controller.cambiarDeposito("SBC 1234",9);
 
-        Controller.cambiarDeposito("SBC 1234",25);
+        Controller.cambiarDeposito("SBC 1234",5);
     }
 }

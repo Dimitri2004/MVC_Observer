@@ -47,3 +47,5 @@ sequenceDiagram
 3. En el modelo, en cada c método que hay cambios:
     * llamar a `notifyObserversG()`
 4.Cree una nueva variable en coche que llame deposito inicialice a 0 y mas tarde estableci un limite
+
+![ObserverCOD.png](../../Documentos/SI/fotos/ObserverCOD.png)

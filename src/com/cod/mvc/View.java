@@ -28,10 +28,7 @@ public class View {
         return true;
     }
     public static boolean alarmaInfraccionG(String matricula, Integer g) {
-       if (Model.getCoche(matricula).deposito<g){
-           System.out.println("Alerta: Postar");
-           return false;
-       }
+        System.out.println("Alerta: Repostar");
        return true;
 
     }
